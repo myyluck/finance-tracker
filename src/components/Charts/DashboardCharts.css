@@ -1,0 +1,24 @@
+.charts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  background-color: var(--bg-main);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.chart-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Responsive untuk layar besar, kita bisa buat bersebelahan jika diinginkan di level parent */

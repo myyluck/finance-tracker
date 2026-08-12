@@ -1,0 +1,133 @@
+.navbar {
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+/* ===========================
+   Navbar Left
+=========================== */
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle-btn {
+  display: none;
+
+  margin-right: 16px;
+
+  color: var(--text-primary);
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+/* ===========================
+   Navbar Right
+=========================== */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ===========================
+   Theme Toggle
+=========================== */
+
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+
+  color: var(--text-secondary);
+
+  font-size: 1.2rem;
+
+  border-radius: var(--radius-full);
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--bg-main);
+  color: var(--color-primary);
+}
+
+/* ===========================
+   User Profile
+=========================== */
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: var(--radius-full);
+
+  background-color: var(--color-primary);
+  color: #ffffff;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.user-info h4 {
+  margin: 0;
+
+  color: var(--text-primary);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.user-info p {
+  margin: 0;
+
+  color: var(--text-secondary);
+
+  font-size: 0.75rem;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 992px) {
+  .menu-toggle-btn {
+    display: block;
+  }
+
+  .user-info {
+    display: none;
+  }
+}
