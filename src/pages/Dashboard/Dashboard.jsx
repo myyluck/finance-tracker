@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fi';
 
 import { useFinance } from '../../context/FinanceContext';
-import StatCard from '../../components/Card/StatCard';
+import StatCard from "../../components/card/StatCard";
 import Button from '../../components/Button/Button';
 import Modal from '../../components/Modal/Modal';
 import TransactionForm from '../../components/TransactionForm/TransactionForm';

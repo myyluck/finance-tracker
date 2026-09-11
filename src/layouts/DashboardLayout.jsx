@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import Sidebar from '../components/Sidebar/Sidebar';
-import Navbar from '../components/Navbar/Navbar';
+import Sidebar from "../components/sidebar/Sidebar";
+import Navbar from "../components/navbar/Navbar";
 
 import './DashboardLayout.css';
 
@@ -21,9 +21,8 @@ const DashboardLayout = () => {
       />
 
       <div
-        className={`sidebar-overlay ${
-          isSidebarOpen ? 'active' : ''
-        }`}
+        className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''
+          }`}
         onClick={toggleSidebar}
       />
 
